@@ -1,0 +1,166 @@
+.header {
+    &__nav {
+        min-width: 100%;
+        display: flex;
+        background-image: linear-gradient(#56C1ED, #56C1ED);
+        padding: 2em 0 1em 0;
+        justify-content: space-between;
+        @include tablet {
+            justify-content: space-evenly;
+            padding: 1.5em 0;
+            align-items: center;
+            position: relative;
+            flex-wrap: nowrap;
+        }
+        .header-logo {
+            width: 10em;
+            object-fit: cover;
+            cursor: pointer;
+            @include tablet {
+                width: 11vw;
+                height: auto;
+            }
+        }
+        .header-magnifier {
+            width: 15px;
+            height: 15px;
+            border: 3px solid white;
+            border-radius: 50%;
+            position: relative;
+            align-self: center;
+            cursor: pointer;
+            margin-right: 25px;
+        }
+        .header__hamburger {
+            width: 30px;
+            border-top: 3px solid #FFFFFF;
+            margin-right: 10px;
+            position: relative;
+            cursor: pointer;
+            @include tablet {
+                display: none;
+            }
+        }
+        .header-magnifier::before {
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            top: 6px;
+            left: 14px;
+            transform: rotate(-45deg);
+            border-left: 3px solid #FFFFFF;
+            @include tablet {
+                
+            }
+        }
+        .menu {
+            display: none;
+            @include tablet {
+                display: flex;
+                align-self: flex-end;
+            }
+            &__list {
+            list-style: none;
+            }
+            &__items {
+                padding: 0 1em;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: white;
+                font-family: 'Prompt', sans-serif;
+                font-size: 14px;
+                font-weight: 500;
+                display: flex;
+                flex-wrap: nowrap;
+            }
+        }
+    }
+}
+.header {
+    // Nav Text
+    .header__nav::after {
+        content: 'Só para não profissionais de saúde residentes no Brasil';
+        text-align: center;
+        position: absolute;
+        right: 2vw;
+        top: 25px;
+        color: white;
+        font-size: 12px;
+        font-family: 'Prompt', sans-serif;
+        font-weight: 400;
+        @include tablet {
+            right: 11vw;
+            top: 10px;
+        }
+    }
+    
+    // Hamburger
+    .header__hamburger::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 5px;
+        width: 30px;
+        height: 3px;
+        background: white;
+    }
+    .header__hamburger::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 13px;
+        width: 30px;
+        height: 3px;
+        background: white;
+    }
+}
+
+
+
+
+
+
+
+.header__doresMusculares {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+}
+.test {
+    position: absolute;
+    width: 80%;
+    height: 80vh;
+    background: blue;
+    left: -30vw;
+    transform:skewX(29deg);
+    display: inline-block;
+    @include tablet {
+        position: absolute;
+        width: 80%;
+        height: 80vh;
+        background: blue;
+        left: -30vw;
+        transform:skewX(29deg);
+        display: inline-block;
+    }
+}
+.test2 {
+    position: absolute;
+    width: 80%;
+    height: 80vh;
+    background: yellow;
+    right: -30vw;
+    transform:skewX(29deg);
+    display: inline-block;
+    @include tablet {
+        position: absolute;
+        width: 80%;
+        height: 80vh;
+        background: yellow;
+        right: -30vw;
+        transform:skewX(29deg);
+        display: inline-block;
+    }
+}
