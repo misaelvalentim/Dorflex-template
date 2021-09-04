@@ -1,0 +1,43 @@
+.dores {
+    width: 100%;
+    height: 160vh;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+    @include tablet {
+        height: 80vh;
+    }
+    &__musculares {
+        position: absolute;
+        width: 100%;
+        height: 55%;
+        background: blue;
+        top: -150px;
+        transform:skewY(-20deg);
+        @include tablet {
+            top: initial;
+            width: 80%;
+            height: 100%;
+            left: -30vw;
+            transform:skewX(29deg);
+            display: inline-block;
+        }
+    }
+    &__enxaqueca {
+        top: 540px;
+        width: 100%;
+        position: absolute;
+        height: 70%;
+        background: yellow;
+        
+        transform:skewY(-20deg);
+        @include tablet {
+            top: initial;
+            width: 80%;
+            height: 100%;
+            right: -30vw;
+            transform:skewX(29deg);
+            display: inline-block;
+        }
+    }
+}
