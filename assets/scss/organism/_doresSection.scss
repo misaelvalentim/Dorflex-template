@@ -1,18 +1,18 @@
 .dores {
     width: 100%;
-    height: 160vh;
+    height: 136vh;
     position: relative;
-    overflow: hidden;
     z-index: -1;
+    overflow: hidden;
     @include tablet {
         height: 80vh;
     }
     &__musculares {
         position: absolute;
         width: 100%;
-        height: 55%;
-        background: blue;
-        top: -150px;
+        height: 70%;
+        background-image: linear-gradient(top, #BEE5F5, #61C5EE);
+        top: -20vh;
         transform:skewY(-20deg);
         @include tablet {
             top: initial;
@@ -24,14 +24,14 @@
         }
     }
     &__enxaqueca {
-        top: 540px;
+        top: 75vh;
         width: 100%;
         position: absolute;
         height: 70%;
-        background: yellow;
-        
+        background-image: linear-gradient(to bottom, #0093C0,#00254A);
         transform:skewY(-20deg);
         @include tablet {
+            background-image: linear-gradient(to bottom, #0090BD, #56C1ED);
             top: initial;
             width: 80%;
             height: 100%;
