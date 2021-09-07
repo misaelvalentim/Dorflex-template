@@ -3,8 +3,10 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    
     background-image: linear-gradient(top, #BEE5F5, #61C5EE);
+    @include tablet {
+        flex-direction: row;
+    }
     img {
         max-width: 100%;
         object-fit: cover;
@@ -12,23 +14,49 @@
     .musculares {
         width: 100%;
         position: relative;
+        @include tablet {
+            width: 50%;
+        }
         &__icon {
             display: flex;
             justify-content: space-between;
             padding: 1.5em 0;
+            @include tablet {
+                justify-content: flex-start;
+                flex-direction: column;
+                padding: 1.5em 0 0 0;
+            }
             .musculares__image {
                 width: 9em;
                 margin-left: 15px;
+                @include tablet {
+                    margin-left: 55px;
+                }
+                @include desktop {
+                    width: 12em;
+                }
             }
             .musculares__text {
-                width: 10em;
+                width: 13em;
                 color: white;
                 background: #000000;
-                font-size: .8em;
-                padding: .6em 1em .6em 1em;
+                font-size: .6em;
+                padding: 1em 1em 1em 1em;
                 border-top-left-radius: 20px;
                 border-bottom-left-radius: 20px;
                 align-self: flex-end;
+                text-transform: uppercase;
+                @include tablet {
+                    font-size: 1em;
+                    align-self: flex-start;
+                    border-top-left-radius: initial;
+                    border-bottom-left-radius: initial;
+                    border-top-right-radius: 20px;
+                    border-bottom-right-radius: 20px;
+                    padding: .5em 1.8em .5em 1em;
+                    text-align: end;
+                    margin-top: 10px;
+                }
             }
         }
         &__video {
@@ -38,12 +66,31 @@
             flex-direction: column;
             padding: 1.5em 0;
             margin: 0 15px;
+            @include tablet {
+                margin-left: 20px;
+            }
             .musculares__title {
                 color: white;
                 font-size: 1.5em;
                 font-weight: 500;
-                text-shadow: 2px 2px 2px rgba(0,0,0,.2);
+                text-shadow: 2px 2px 2px rgba(0,0,0,.5);
                 padding-bottom: 1em;
+                line-height: 36px;
+                @include tablet {
+                    padding-bottom: .5em;
+                }
+                @include desktop {
+                    font-size: 2em;
+                    line-height: 48px;
+                }
+            }
+            .musculares__youtube {
+                width: 300px;
+                height: 300px;
+                @include desktop {
+                    width: 450px;
+
+                }
             }
         }
         &__medicine {
@@ -52,11 +99,35 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding-bottom: 5em;
+            @include tablet {
+                padding-bottom: 1em;
+            }
+            .musculares__medicineToy {
+                width: 300px;
+                @include tablet {
+                    display: none;
+                }
+            }
+            .musculares__medicine {
+                display: none;
+                @include tablet {
+                    display: initial;
+                    width: 300px;
+                }
+                @include desktop {
+                    width: 450px;
+                }
+            }
             .musculares__link {
                 color: white;
-                font-size: 1em;
-                padding: .5em 0 1em 0;
+                font-size: 1.5em;
+                padding: .5em 0 5em 0;
+                @include tablet {
+                    padding: .5 0 1em 0;
+                }
+                @include desktop {
+                    padding: 0 0 1em 0;
+                }
             }
         }
     }

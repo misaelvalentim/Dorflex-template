@@ -70,8 +70,26 @@ p {
   font-weight: 600;
 }
 
+.header__sanofi {
+  padding: .5em 0;
+  text-align: end;
+  margin-right: 2vw;
+}
+
+@media only screen and (min-width: 768px) {
+  .header__sanofi {
+    margin-right: 6em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .header__sanofi {
+    margin-right: 18em;
+  }
+}
+
 .header__nav {
-  min-width: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,6 +99,7 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  overflow: hidden;
 }
 
 @media only screen and (min-width: 768px) {
@@ -107,7 +126,7 @@ p {
 
 @media only screen and (min-width: 768px) {
   .header__nav .header-logo {
-    width: 8em;
+    width: 7em;
     height: auto;
   }
 }
@@ -250,6 +269,15 @@ p {
   background-image: linear-gradient(top, #BEE5F5, #61C5EE);
 }
 
+@media only screen and (min-width: 768px) {
+  .dores {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .dores img {
   max-width: 100%;
   -o-object-fit: cover;
@@ -259,6 +287,12 @@ p {
 .dores .musculares {
   width: 100%;
   position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .dores .musculares {
+    width: 50%;
+  }
 }
 
 .dores .musculares__icon {
@@ -271,21 +305,62 @@ p {
   padding: 1.5em 0;
 }
 
+@media only screen and (min-width: 768px) {
+  .dores .musculares__icon {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1.5em 0 0 0;
+  }
+}
+
 .dores .musculares__icon .musculares__image {
   width: 9em;
   margin-left: 15px;
 }
 
+@media only screen and (min-width: 768px) {
+  .dores .musculares__icon .musculares__image {
+    margin-left: 55px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .dores .musculares__icon .musculares__image {
+    width: 12em;
+  }
+}
+
 .dores .musculares__icon .musculares__text {
-  width: 10em;
+  width: 13em;
   color: white;
   background: #000000;
-  font-size: .8em;
-  padding: .6em 1em .6em 1em;
+  font-size: .6em;
+  padding: 1em 1em 1em 1em;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) {
+  .dores .musculares__icon .musculares__text {
+    font-size: 1em;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    border-top-left-radius: initial;
+    border-bottom-left-radius: initial;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: .5em 1.8em .5em 1em;
+    text-align: end;
+    margin-top: 10px;
+  }
 }
 
 .dores .musculares__video {
@@ -306,12 +381,43 @@ p {
   margin: 0 15px;
 }
 
+@media only screen and (min-width: 768px) {
+  .dores .musculares__video {
+    margin-left: 20px;
+  }
+}
+
 .dores .musculares__video .musculares__title {
   color: white;
   font-size: 1.5em;
   font-weight: 500;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   padding-bottom: 1em;
+  line-height: 36px;
+}
+
+@media only screen and (min-width: 768px) {
+  .dores .musculares__video .musculares__title {
+    padding-bottom: .5em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .dores .musculares__video .musculares__title {
+    font-size: 2em;
+    line-height: 48px;
+  }
+}
+
+.dores .musculares__video .musculares__youtube {
+  width: 300px;
+  height: 300px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .dores .musculares__video .musculares__youtube {
+    width: 450px;
+  }
 }
 
 .dores .musculares__medicine {
@@ -329,13 +435,57 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 5em;
+}
+
+@media only screen and (min-width: 768px) {
+  .dores .musculares__medicine {
+    padding-bottom: 1em;
+  }
+}
+
+.dores .musculares__medicine .musculares__medicineToy {
+  width: 300px;
+}
+
+@media only screen and (min-width: 768px) {
+  .dores .musculares__medicine .musculares__medicineToy {
+    display: none;
+  }
+}
+
+.dores .musculares__medicine .musculares__medicine {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .dores .musculares__medicine .musculares__medicine {
+    display: initial;
+    width: 300px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .dores .musculares__medicine .musculares__medicine {
+    width: 450px;
+  }
 }
 
 .dores .musculares__medicine .musculares__link {
   color: white;
-  font-size: 1em;
-  padding: .5em 0 1em 0;
+  font-size: 1.5em;
+  padding: .5em 0 5em 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .dores .musculares__medicine .musculares__link {
+    padding: .5 0 1em 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .dores .musculares__medicine .musculares__link {
+    padding: 0 0 1em 0;
+  }
 }
 
 .dores {
@@ -354,6 +504,12 @@ p {
   z-index: 1;
 }
 
+@media only screen and (min-width: 768px) {
+  .dores .enxaqueca {
+    width: 50%;
+  }
+}
+
 .dores .enxaqueca__icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -364,22 +520,68 @@ p {
   padding: 1.5em 0;
 }
 
+@media only screen and (min-width: 768px) {
+  .dores .enxaqueca__icon {
+    padding: 1.5em 0 0 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
 .dores .enxaqueca__icon .enxaqueca__image {
   width: 9em;
   margin-left: 15px;
 }
 
+@media only screen and (min-width: 768px) {
+  .dores .enxaqueca__icon .enxaqueca__image {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin-left: initial;
+    margin-right: 30px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .dores .enxaqueca__icon .enxaqueca__image {
+    width: 10em;
+    margin-right: 30px;
+  }
+}
+
 .dores .enxaqueca__icon .enxaqueca__text {
-  width: 10em;
+  width: 13em;
   color: white;
   background: #FF0000;
-  font-size: .8em;
-  padding: .6em 1em .6em 0;
+  font-size: .6em;
+  padding: 1em;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) {
+  .dores .enxaqueca__icon .enxaqueca__text {
+    width: 10em;
+    font-size: 1em;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    padding: .5em 1em .5em 0;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .dores .enxaqueca__icon .enxaqueca__text {
+    padding: .5em 1em;
+  }
 }
 
 .dores .enxaqueca__video {
@@ -396,8 +598,14 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 1.5em 0;
+  padding: .5em 0;
   margin: 0 15px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .dores .enxaqueca__video {
+    padding: 0;
+  }
 }
 
 .dores .enxaqueca__video .enxaqueca__title {
@@ -405,7 +613,27 @@ p {
   font-size: 1.5em;
   font-weight: 500;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-  padding-bottom: 1em;
+  padding: 0;
+  padding-bottom: .5em;
+  line-height: 36px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .dores .enxaqueca__video .enxaqueca__title {
+    font-size: 2em;
+    line-height: 48px;
+  }
+}
+
+.dores .enxaqueca__video .enxaqueca__youtube {
+  width: 300px;
+  height: 300px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .dores .enxaqueca__video .enxaqueca__youtube {
+    width: 450px;
+  }
 }
 
 .dores .enxaqueca__medicine {
@@ -422,13 +650,52 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 5em;
+}
+
+@media only screen and (min-width: 1200px) {
+  .dores .enxaqueca__medicine {
+    padding: 1em 0;
+  }
+}
+
+.dores .enxaqueca__medicine .enxaqueca__medicineToy {
+  width: 300px;
+}
+
+@media only screen and (min-width: 768px) {
+  .dores .enxaqueca__medicine .enxaqueca__medicineToy {
+    display: none;
+  }
+}
+
+.dores .enxaqueca__medicine .enxaqueca__medicine {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .dores .enxaqueca__medicine .enxaqueca__medicine {
+    display: initial;
+    width: 300px;
+    padding-bottom: 1.4em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .dores .enxaqueca__medicine .enxaqueca__medicine {
+    width: 350px;
+  }
 }
 
 .dores .enxaqueca__medicine .enxaqueca__link {
   color: white;
-  font-size: 1em;
+  font-size: 1.5em;
   padding: .5em 0 1em 0;
+}
+
+@media only screen and (min-width: 1200px) {
+  .dores .enxaqueca__medicine .enxaqueca__link {
+    padding: 0 0 1em 0;
+  }
 }
 
 .dores .enxaqueca::before {
@@ -443,4 +710,24 @@ p {
   z-index: -1;
   -webkit-transform: skewY(-12deg);
           transform: skewY(-12deg);
+}
+
+@media only screen and (min-width: 768px) {
+  .dores .enxaqueca::before {
+    width: 130%;
+    height: 130%;
+    -webkit-transform: skewY(0);
+            transform: skewY(0);
+    -webkit-transform: skewX(8deg);
+            transform: skewX(8deg);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .dores .enxaqueca::before {
+    -webkit-transform: skewX(20deg);
+            transform: skewX(20deg);
+    width: 140%;
+    height: 120%;
+  }
 }

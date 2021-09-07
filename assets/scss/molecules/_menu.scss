@@ -1,10 +1,22 @@
 .header {
+    &__sanofi {
+        padding: .5em 0;
+        text-align: end;
+        margin-right: 2vw;
+        @include tablet {
+            margin-right: 6em;
+        }
+        @include desktop {
+            margin-right: 18em;
+        }
+    }
     &__nav {
-        min-width: 100%;
+        width: 100%;
         display: flex;
         background-image: linear-gradient(#56C1ED, #56C1ED);
         padding: 2em 0 1em 0;
         justify-content: space-between;
+        overflow: hidden;
         @include tablet {
             justify-content: space-evenly;
             padding: 1.5em 0;
@@ -17,7 +29,7 @@
             object-fit: cover;
             cursor: pointer;
             @include tablet {
-                width: 8em;
+                width: 7em;
                 height: auto;
             }
         }
