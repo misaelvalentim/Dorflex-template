@@ -67,6 +67,7 @@
             flex-direction: column;
             padding: 1.5em 0;
             margin: 0 15px;
+            position: relative;
             @include tablet {
                 margin-left: 20px;
                 padding: 1em 0 0 0;
@@ -134,3 +135,29 @@
         }
     }
 }
+
+// Opcional
+/*
+    .musculares__video div, .enxaqueca__video div {
+        position: relative;
+    }
+    .musculares__video div::before, .enxaqueca__video div::before {
+        content: 'ASSISTA AGORA';
+        position: absolute;
+        width: 150px;
+        display: flex;
+        top: 41.5%;
+        left: 20%;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        color: #00254A;
+        background: #f9f9f9fa;
+        padding: 1em 0 1em 1.5em;
+        cursor: pointer;
+        @include desktop {
+            left: 35%;
+        }
+    }
+*/

@@ -52,9 +52,6 @@
                     margin-top: 10px;
                     text-align: center;
                 }
-                @include desktop {
-                    padding: .5em 1em;
-                }
             }
         }
         &__video {
@@ -131,7 +128,9 @@
     z-index: -1;
     transform:skewY(-12deg);
     @include tablet {
-        background-image:linear-gradient(to bottom #56c2ed 0%, #0093C0 50%, #00254A 100%);
+        // background-image: radial-gradient(farthest-corner at 1000px 550px, #0093C0 0%,#0090BD 50%, #00254afb 60%);
+        // background: radial-gradient(farthest-corner,#0093C0 50px 50px, #0090BD 20%, #00254A 90%);
+        background: radial-gradient(at 10% 70%, #10c6db 10%, #0093C0 50%);
         width: 130%;
         height: 130%;
         transform: skewY(0);

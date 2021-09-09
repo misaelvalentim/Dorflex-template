@@ -390,6 +390,7 @@ p {
           flex-direction: column;
   padding: 1.5em 0;
   margin: 0 15px;
+  position: relative;
 }
 
 @media only screen and (min-width: 768px) {
@@ -490,6 +491,30 @@ p {
   font-size: 1.5em;
 }
 
+/*
+    .musculares__video div, .enxaqueca__video div {
+        position: relative;
+    }
+    .musculares__video div::before, .enxaqueca__video div::before {
+        content: 'ASSISTA AGORA';
+        position: absolute;
+        width: 150px;
+        display: flex;
+        top: 41.5%;
+        left: 20%;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        color: #00254A;
+        background: #f9f9f9fa;
+        padding: 1em 0 1em 1.5em;
+        cursor: pointer;
+        @include desktop {
+            left: 35%;
+        }
+    }
+*/
 .dores {
   overflow: hidden;
 }
@@ -580,12 +605,6 @@ p {
     padding: .5em 1em .5em 0;
     margin-top: 10px;
     text-align: center;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .dores .enxaqueca__icon .enxaqueca__text {
-    padding: .5em 1em;
   }
 }
 
@@ -709,8 +728,7 @@ p {
 
 @media only screen and (min-width: 768px) {
   .dores .enxaqueca::before {
-    background-image: -webkit-gradient(linear, bottom #56c2ed 0%, color-stop(50%, #0093C0), to(#00254A));
-    background-image: linear-gradient(to bottom #56c2ed 0%, #0093C0 50%, #00254A 100%);
+    background: radial-gradient(at 10% 70%, #10c6db 10%, #0093C0 50%);
     width: 130%;
     height: 130%;
     -webkit-transform: skewY(0);
