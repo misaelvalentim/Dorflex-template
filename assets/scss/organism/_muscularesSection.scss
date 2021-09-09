@@ -5,6 +5,7 @@
     text-align: center;
     background-image: linear-gradient(top, #BEE5F5, #61C5EE);
     @include tablet {
+        background-image: linear-gradient(top, #BEE5F5, #61C5EE);
         flex-direction: row;
     }
     img {
@@ -41,7 +42,7 @@
                 color: white;
                 background: #000000;
                 font-size: .6em;
-                padding: 1em 1em 1em 1em;
+                padding: 1em 1em 1em .3em;
                 border-top-left-radius: 20px;
                 border-bottom-left-radius: 20px;
                 align-self: flex-end;
@@ -68,6 +69,7 @@
             margin: 0 15px;
             @include tablet {
                 margin-left: 20px;
+                padding: 1em 0 0 0;
             }
             .musculares__title {
                 color: white;
@@ -99,8 +101,9 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            padding-bottom: 6em;
             @include tablet {
-                padding-bottom: 1em;
+                padding: .5em 0 3em 0;
             }
             .musculares__medicineToy {
                 width: 300px;
@@ -113,20 +116,19 @@
                 @include tablet {
                     display: initial;
                     width: 300px;
+                    padding: 0 0 2em 0;
                 }
                 @include desktop {
+                    padding: 0 0 1.5em 0;
                     width: 450px;
                 }
             }
             .musculares__link {
                 color: white;
                 font-size: 1.5em;
-                padding: .5em 0 5em 0;
                 @include tablet {
-                    padding: .5 0 1em 0;
                 }
                 @include desktop {
-                    padding: 0 0 1em 0;
                 }
             }
         }

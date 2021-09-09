@@ -88,13 +88,16 @@ p {
   }
 }
 
+.header__sanofi .sanofi__icon {
+  cursor: pointer;
+}
+
 .header__nav {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#56C1ED), to(#56C1ED));
-  background-image: linear-gradient(#56C1ED, #56C1ED);
+  background: #56C1ED;
   padding: 2em 0 1em 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -187,15 +190,15 @@ p {
     display: flex;
     -ms-flex-item-align: end;
         align-self: flex-end;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
   }
 }
 
 .header__nav .menu__list {
   list-style: none;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+}
+
+.header__nav .menu__list :hover {
+  color: #00254A;
 }
 
 .header__nav .menu__items {
@@ -211,6 +214,12 @@ p {
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+}
+
+@media only screen and (min-width: 1200px) {
+  .header__nav .menu__items {
+    padding: 0 1em;
+  }
 }
 
 .header .header__nav::after {
@@ -271,6 +280,8 @@ p {
 
 @media only screen and (min-width: 768px) {
   .dores {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#BEE5F5), to(#61C5EE));
+    background-image: linear-gradient(top, #BEE5F5, #61C5EE);
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -340,7 +351,7 @@ p {
   color: white;
   background: #000000;
   font-size: .6em;
-  padding: 1em 1em 1em 1em;
+  padding: 1em 1em 1em .3em;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   -ms-flex-item-align: end;
@@ -384,6 +395,7 @@ p {
 @media only screen and (min-width: 768px) {
   .dores .musculares__video {
     margin-left: 20px;
+    padding: 1em 0 0 0;
   }
 }
 
@@ -435,11 +447,12 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 6em;
 }
 
 @media only screen and (min-width: 768px) {
   .dores .musculares__medicine {
-    padding-bottom: 1em;
+    padding: .5em 0 3em 0;
   }
 }
 
@@ -461,11 +474,13 @@ p {
   .dores .musculares__medicine .musculares__medicine {
     display: initial;
     width: 300px;
+    padding: 0 0 2em 0;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .dores .musculares__medicine .musculares__medicine {
+    padding: 0 0 1.5em 0;
     width: 450px;
   }
 }
@@ -473,19 +488,6 @@ p {
 .dores .musculares__medicine .musculares__link {
   color: white;
   font-size: 1.5em;
-  padding: .5em 0 5em 0;
-}
-
-@media only screen and (min-width: 768px) {
-  .dores .musculares__medicine .musculares__link {
-    padding: .5 0 1em 0;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .dores .musculares__medicine .musculares__link {
-    padding: 0 0 1em 0;
-  }
 }
 
 .dores {
@@ -555,15 +557,17 @@ p {
 }
 
 .dores .enxaqueca__icon .enxaqueca__text {
-  width: 13em;
+  width: 10em;
   color: white;
   background: #FF0000;
   font-size: .6em;
-  padding: 1em;
+  padding: 1em 1em 1em 2em;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: initial;
   text-transform: uppercase;
 }
 
@@ -575,6 +579,7 @@ p {
         align-self: flex-end;
     padding: .5em 1em .5em 0;
     margin-top: 10px;
+    text-align: center;
   }
 }
 
@@ -650,12 +655,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-@media only screen and (min-width: 1200px) {
-  .dores .enxaqueca__medicine {
-    padding: 1em 0;
-  }
+  padding-bottom: 3em;
 }
 
 .dores .enxaqueca__medicine .enxaqueca__medicineToy {
@@ -676,26 +676,21 @@ p {
   .dores .enxaqueca__medicine .enxaqueca__medicine {
     display: initial;
     width: 300px;
-    padding-bottom: 1.4em;
+    height: 131px;
+    padding: 0;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .dores .enxaqueca__medicine .enxaqueca__medicine {
-    width: 350px;
+    width: 450px;
+    height: 200px;
   }
 }
 
 .dores .enxaqueca__medicine .enxaqueca__link {
   color: white;
   font-size: 1.5em;
-  padding: .5em 0 1em 0;
-}
-
-@media only screen and (min-width: 1200px) {
-  .dores .enxaqueca__medicine .enxaqueca__link {
-    padding: 0 0 1em 0;
-  }
 }
 
 .dores .enxaqueca::before {
@@ -705,8 +700,8 @@ p {
   width: 120%;
   height: 120%;
   top: -5em;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#0093C0), to(#00254A));
-  background-image: linear-gradient(to bottom, #0093C0, #00254A);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0093C0), color-stop(60%, #0090BD), to(#00254A));
+  background-image: linear-gradient(to bottom, #0093C0, #0090BD 60%, #00254A);
   z-index: -1;
   -webkit-transform: skewY(-12deg);
           transform: skewY(-12deg);
@@ -714,6 +709,8 @@ p {
 
 @media only screen and (min-width: 768px) {
   .dores .enxaqueca::before {
+    background-image: -webkit-gradient(linear, bottom #56c2ed 0%, color-stop(50%, #0093C0), to(#00254A));
+    background-image: linear-gradient(to bottom #56c2ed 0%, #0093C0 50%, #00254A 100%);
     width: 130%;
     height: 130%;
     -webkit-transform: skewY(0);
@@ -725,8 +722,8 @@ p {
 
 @media only screen and (min-width: 1200px) {
   .dores .enxaqueca::before {
-    -webkit-transform: skewX(20deg);
-            transform: skewX(20deg);
+    -webkit-transform: skewX(17deg);
+            transform: skewX(17deg);
     width: 140%;
     height: 120%;
   }

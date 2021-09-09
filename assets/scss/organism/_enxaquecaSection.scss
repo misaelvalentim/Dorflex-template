@@ -34,14 +34,15 @@
                 }
             }
             .enxaqueca__text {
-                width: 13em;
+                width: 10em;
                 color: white;
                 background: #FF0000;
                 font-size: .6em;
-                padding: 1em;
+                padding: 1em 1em 1em 2em;
                 border-top-left-radius: 20px;
                 border-bottom-left-radius: 20px;
-                align-self: flex-end;
+                align-self: center;
+                text-align: initial;
                 text-transform: uppercase;
                 @include tablet {
                     width: 10em;
@@ -49,6 +50,7 @@
                     align-self: flex-end;
                     padding: .5em 1em .5em 0;
                     margin-top: 10px;
+                    text-align: center;
                 }
                 @include desktop {
                     padding: .5em 1em;
@@ -91,9 +93,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            @include desktop {
-                padding: 1em 0;
-            }
+            padding-bottom: 3em;
             .enxaqueca__medicineToy {
                 width: 300px;
                 @include tablet {
@@ -105,19 +105,17 @@
                 @include tablet {
                     display: initial;
                     width: 300px;
-                    padding-bottom: 1.4em;
+                    height: 131px;
+                    padding: 0;
                 }
                 @include desktop {
-                    width: 350px;
+                    width: 450px;
+                    height: 200px;
                 }
             }
             .enxaqueca__link {
                 color: white;
                 font-size: 1.5em;
-                padding: .5em 0 1em 0;
-                @include desktop {
-                    padding: 0 0 1em 0;
-                }
             }
         }
     }
@@ -129,17 +127,18 @@
     width: 120%;
     height: 120%;
     top: -5em;
-    background-image: linear-gradient(to bottom, #0093C0, #00254A);
+    background-image: linear-gradient(to bottom, #0093C0, #0090BD 60%, #00254A);
     z-index: -1;
     transform:skewY(-12deg);
     @include tablet {
+        background-image:linear-gradient(to bottom #56c2ed 0%, #0093C0 50%, #00254A 100%);
         width: 130%;
         height: 130%;
         transform: skewY(0);
         transform: skewX(8deg);
     }
     @include desktop {
-        transform: skewX(20deg);
+        transform: skewX(17deg);
         width: 140%;
         height: 120%;
     }
