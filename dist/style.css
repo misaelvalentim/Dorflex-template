@@ -248,6 +248,13 @@ p {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .header .header__nav::after {
+    font-size: .9em;
+    right: 15vw;
+  }
+}
+
 .header .header__hamburger::before {
   content: '';
   position: absolute;
@@ -464,6 +471,12 @@ p {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .dores .musculares__icon .musculares__text {
+    padding: 1em 1.8em 1em 0em;
+  }
+}
+
 .dores .musculares__video {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -571,7 +584,7 @@ p {
 
 @media only screen and (min-width: 1200px) {
   .dores .musculares__medicine .musculares__medicine {
-    padding: 0 0 1.5em 0;
+    padding: 0 0 1.3em 0;
     width: 450px;
   }
 }
@@ -579,6 +592,8 @@ p {
 .dores .musculares__medicine .musculares__link {
   color: white;
   font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 /*
@@ -698,6 +713,12 @@ p {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .dores .enxaqueca__icon .enxaqueca__text {
+    padding: 1em 2em 1em 0em;
+  }
+}
+
 .dores .enxaqueca__video {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -800,6 +821,8 @@ p {
 .dores .enxaqueca__medicine .enxaqueca__link {
   color: white;
   font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .dores .enxaqueca::before {

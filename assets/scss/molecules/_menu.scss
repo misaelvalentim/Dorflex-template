@@ -118,6 +118,10 @@
             right: 11vw;
             top: 10px;
         }
+        @include desktop {
+            font-size: .9em;
+            right: 15vw;
+        }
     }
     
     // Hamburger
