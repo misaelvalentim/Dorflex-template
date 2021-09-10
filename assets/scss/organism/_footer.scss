@@ -1,0 +1,119 @@
+.footer {
+    width: 100%;
+    height: 100%;
+    background: #131e32;
+    &__nav {
+        width: 100%;
+        height: 100%;
+        .menu {
+            width: 100%;
+            height: 100%;
+            padding-top: 2em;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            @include tablet {
+                flex-direction: row;
+                padding-top: 3em;
+            }
+            &__lists {
+                text-align: center;
+                width: 100%;
+                list-style: none;
+                padding: 1em 0;
+                @include tablet {
+                    padding: 0 .9em;
+                    margin-top: 1em;
+                    width: initial;
+                }
+            }
+            &__items {
+                font-size: 1em;
+                text-decoration: none;
+                color: #70bde7;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+        }
+    }
+}
+//Background noo footer menu
+.footer .footer__nav .menu {
+    .menu__lists:hover {
+        background: darken(#70bde7, 50%);
+        cursor: pointer;
+        @include tablet {
+            background: none;
+            cursor: auto;
+        }
+    }
+    .menu__items:hover {
+        @include tablet {
+            color: darken(#70bde7, 30%);
+        }
+    }
+}
+.footer .termos .termos__items:hover {
+    color: lighten(#F9F9F9, 20%);
+    opacity: .8;
+}
+
+.footer .footer__line {
+    width: 60%;
+    max-width: 400px;
+    height: 1px;
+    background: #F9F9F9;
+    opacity: 0.2;
+    margin: 30px auto;
+    @include tablet {
+        min-width: 90%;
+    }
+}
+
+.footer {
+    .termos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        @include tablet {
+            flex-direction: row;
+        }
+        &__lists {
+            list-style: none;
+            padding-bottom: 1.5em;
+            @include tablet {
+                padding: 0 1em;
+            }
+
+        }
+        &__items {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: .9em;
+            color: #F9F9F9;
+            opacity: 0.3;
+            text-transform: uppercase;
+        }
+    }
+    .endereco {
+        max-width: 80%;
+        text-align: center;
+        font-size: 1em;
+        line-height: 1.5em;
+        color: #F9F9F9;
+        font-weight: normal;
+        margin: 0 auto;
+        @include tablet {
+            padding-top: 4em;
+            padding-bottom: 3em;
+        }
+        &__copyright {
+            margin-top: 30px;
+            font-weight: normal;
+            font-size: .9em;
+        }
+    }
+}
