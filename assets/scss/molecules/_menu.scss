@@ -35,6 +35,9 @@
                 width: 7em;
                 height: auto;
             }
+            @include desktop {
+                width: 10em;
+            }
         }
         .header-magnifier {
             width: 15px;
