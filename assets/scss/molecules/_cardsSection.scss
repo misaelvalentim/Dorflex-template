@@ -1,6 +1,5 @@
 .cards {
-    width: 70%;
-    height: 220vh;
+    width: calc(100% - 40px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,9 +15,9 @@
     }
     &__video {
         min-width: 300px;
-        max-width: 1200px;
         width: 100%;
-        height: 100%;   
+        max-width: 1200px;
+        height: 100%;
         padding: 3em 0 5em 0;
         border-top: 3px solid #56C1ED;
         border-bottom: 3px solid #56C1ED;
@@ -28,9 +27,11 @@
     }
     &__youtube {
         width: 100%;
+        min-height: 300px;
         height: 100%;
+        max-height: 700px;
         @include tablet {
-            min-height: 700px;
+            min-height: 600px;
         }
     }
 }
