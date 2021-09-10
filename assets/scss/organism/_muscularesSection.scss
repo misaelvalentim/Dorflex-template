@@ -58,6 +58,9 @@
                     text-align: end;
                     margin-top: 10px;
                 }
+                @include desktop {
+                    padding: 1em 1.8em 1em 0em;
+                }
             }
         }
         &__video {
@@ -120,17 +123,15 @@
                     padding: 0 0 2em 0;
                 }
                 @include desktop {
-                    padding: 0 0 1.5em 0;
+                    padding: 0 0 1.3em 0;
                     width: 450px;
                 }
             }
             .musculares__link {
                 color: white;
                 font-size: 1.5em;
-                @include tablet {
-                }
-                @include desktop {
-                }
+                text-transform: uppercase;
+                font-weight: 600;
             }
         }
     }
