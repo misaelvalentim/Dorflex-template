@@ -1,16 +1,13 @@
 .header {
+    display: flex;
+    flex-direction: column;
     &__sanofi {
-        padding: .5em 0;
+        width: 97%;
+        margin: 0 auto;
         text-align: end;
-        margin-right: 2vw;
+        padding: .5em 0;
         @include tablet {
-            margin-right: 6em;
-        }
-        @include desktop {
-            margin-right: 18em;
-        }
-        .sanofi__icon {
-            cursor: pointer;
+            width: 70%;
         }
     }
     &__nav {
