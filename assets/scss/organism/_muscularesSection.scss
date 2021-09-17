@@ -1,4 +1,4 @@
-.dores {
+.aches {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,7 +12,7 @@
         max-width: 100%;
         object-fit: cover;
     }
-    .musculares {
+    .muscle {
         width: 100%;
         position: relative;
         @include tablet {
@@ -27,7 +27,7 @@
                 flex-direction: column;
                 padding: 1.5em 0 0 0;
             }
-            .musculares__image {
+            .muscle__image {
                 width: 9em;
                 margin-left: 15px;
                 @include tablet {
@@ -37,7 +37,7 @@
                     width: 12em;
                 }
             }
-            .musculares__text {
+            .muscle__text {
                 width: 13em;
                 color: white;
                 background: #000000;
@@ -75,7 +75,7 @@
                 margin-left: 20px;
                 padding: 1em 0 0 0;
             }
-            .musculares__title {
+            .muscle__title {
                 color: white;
                 font-size: 1.5em;
                 font-weight: 500;
@@ -90,7 +90,7 @@
                     line-height: 48px;
                 }
             }
-            .musculares__youtube {
+            .muscle__youtube {
                 width: 300px;
                 height: 300px;
                 @include desktop {
@@ -109,13 +109,13 @@
             @include tablet {
                 padding: .5em 0 3em 0;
             }
-            .musculares__medicineToy {
+            .muscle__medicineToy {
                 width: 300px;
                 @include tablet {
                     display: none;
                 }
             }
-            .musculares__medicine {
+            .muscle__medicine {
                 display: none;
                 @include tablet {
                     display: initial;
@@ -127,7 +127,7 @@
                     width: 450px;
                 }
             }
-            .musculares__link {
+            .muscle__link {
                 color: white;
                 font-size: 1.5em;
                 text-transform: uppercase;

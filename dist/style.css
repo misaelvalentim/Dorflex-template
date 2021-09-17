@@ -358,7 +358,7 @@ p {
   }
 }
 
-.dores {
+.aches {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -375,7 +375,7 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-  .dores {
+  .aches {
     background-image: -webkit-gradient(linear, left top, left bottom, from(#BEE5F5), to(#61C5EE));
     background-image: linear-gradient(top, #BEE5F5, #61C5EE);
     -webkit-box-orient: horizontal;
@@ -385,24 +385,24 @@ p {
   }
 }
 
-.dores img {
+.aches img {
   max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.dores .musculares {
+.aches .muscle {
   width: 100%;
   position: relative;
 }
 
 @media only screen and (min-width: 768px) {
-  .dores .musculares {
+  .aches .muscle {
     width: 50%;
   }
 }
 
-.dores .musculares__icon {
+.aches .muscle__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -413,7 +413,7 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-  .dores .musculares__icon {
+  .aches .muscle__icon {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -425,24 +425,24 @@ p {
   }
 }
 
-.dores .musculares__icon .musculares__image {
+.aches .muscle__icon .muscle__image {
   width: 9em;
   margin-left: 15px;
 }
 
 @media only screen and (min-width: 768px) {
-  .dores .musculares__icon .musculares__image {
+  .aches .muscle__icon .muscle__image {
     margin-left: 55px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .dores .musculares__icon .musculares__image {
+  .aches .muscle__icon .muscle__image {
     width: 12em;
   }
 }
 
-.dores .musculares__icon .musculares__text {
+.aches .muscle__icon .muscle__text {
   width: 13em;
   color: white;
   background: #000000;
@@ -456,7 +456,7 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-  .dores .musculares__icon .musculares__text {
+  .aches .muscle__icon .muscle__text {
     font-size: 1em;
     -ms-flex-item-align: start;
         align-self: flex-start;
@@ -471,12 +471,12 @@ p {
 }
 
 @media only screen and (min-width: 1200px) {
-  .dores .musculares__icon .musculares__text {
+  .aches .muscle__icon .muscle__text {
     padding: 1em 1.8em 1em 0em;
   }
 }
 
-.dores .musculares__video {
+.aches .muscle__video {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -496,13 +496,13 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-  .dores .musculares__video {
+  .aches .muscle__video {
     margin-left: 20px;
     padding: 1em 0 0 0;
   }
 }
 
-.dores .musculares__video .musculares__title {
+.aches .muscle__video .muscle__title {
   color: white;
   font-size: 1.5em;
   font-weight: 500;
@@ -512,30 +512,30 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-  .dores .musculares__video .musculares__title {
+  .aches .muscle__video .muscle__title {
     padding-bottom: .5em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .dores .musculares__video .musculares__title {
+  .aches .muscle__video .muscle__title {
     font-size: 2em;
     line-height: 48px;
   }
 }
 
-.dores .musculares__video .musculares__youtube {
+.aches .muscle__video .muscle__youtube {
   width: 300px;
   height: 300px;
 }
 
 @media only screen and (min-width: 1200px) {
-  .dores .musculares__video .musculares__youtube {
+  .aches .muscle__video .muscle__youtube {
     width: 450px;
   }
 }
 
-.dores .musculares__medicine {
+.aches .muscle__medicine {
   z-index: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -554,27 +554,27 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-  .dores .musculares__medicine {
+  .aches .muscle__medicine {
     padding: .5em 0 3em 0;
   }
 }
 
-.dores .musculares__medicine .musculares__medicineToy {
+.aches .muscle__medicine .muscle__medicineToy {
   width: 300px;
 }
 
 @media only screen and (min-width: 768px) {
-  .dores .musculares__medicine .musculares__medicineToy {
+  .aches .muscle__medicine .muscle__medicineToy {
     display: none;
   }
 }
 
-.dores .musculares__medicine .musculares__medicine {
+.aches .muscle__medicine .muscle__medicine {
   display: none;
 }
 
 @media only screen and (min-width: 768px) {
-  .dores .musculares__medicine .musculares__medicine {
+  .aches .muscle__medicine .muscle__medicine {
     display: initial;
     width: 300px;
     padding: 0 0 2em 0;
@@ -582,13 +582,13 @@ p {
 }
 
 @media only screen and (min-width: 1200px) {
-  .dores .musculares__medicine .musculares__medicine {
+  .aches .muscle__medicine .muscle__medicine {
     padding: 0 0 1.3em 0;
     width: 450px;
   }
 }
 
-.dores .musculares__medicine .musculares__link {
+.aches .muscle__medicine .muscle__link {
   color: white;
   font-size: 1.5em;
   text-transform: uppercase;
@@ -619,29 +619,29 @@ p {
         }
     }
 */
-.dores {
+.aches {
   overflow: hidden;
 }
 
-.dores img {
+.aches img {
   max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.dores .enxaqueca {
+.aches .migraine {
   width: 100%;
   position: relative;
   z-index: 1;
 }
 
 @media only screen and (min-width: 768px) {
-  .dores .enxaqueca {
+  .aches .migraine {
     width: 50%;
   }
 }
 
-.dores .enxaqueca__icon {
+.aches .migraine__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -652,7 +652,7 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-  .dores .enxaqueca__icon {
+  .aches .migraine__icon {
     padding: 1.5em 0 0 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -664,13 +664,13 @@ p {
   }
 }
 
-.dores .enxaqueca__icon .enxaqueca__image {
+.aches .migraine__icon .migraine__image {
   width: 9em;
   margin-left: 15px;
 }
 
 @media only screen and (min-width: 768px) {
-  .dores .enxaqueca__icon .enxaqueca__image {
+  .aches .migraine__icon .migraine__image {
     -ms-flex-item-align: end;
         align-self: flex-end;
     margin-left: initial;
@@ -679,13 +679,13 @@ p {
 }
 
 @media only screen and (min-width: 1200px) {
-  .dores .enxaqueca__icon .enxaqueca__image {
+  .aches .migraine__icon .migraine__image {
     width: 10em;
     margin-right: 30px;
   }
 }
 
-.dores .enxaqueca__icon .enxaqueca__text {
+.aches .migraine__icon .migraine__text {
   width: 10em;
   color: white;
   background: #FF0000;
@@ -701,7 +701,7 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-  .dores .enxaqueca__icon .enxaqueca__text {
+  .aches .migraine__icon .migraine__text {
     width: 10em;
     font-size: 1em;
     -ms-flex-item-align: end;
@@ -713,12 +713,12 @@ p {
 }
 
 @media only screen and (min-width: 1200px) {
-  .dores .enxaqueca__icon .enxaqueca__text {
+  .aches .migraine__icon .migraine__text {
     padding: 1em 2em 1em 0em;
   }
 }
 
-.dores .enxaqueca__video {
+.aches .migraine__video {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -737,12 +737,12 @@ p {
 }
 
 @media only screen and (min-width: 1200px) {
-  .dores .enxaqueca__video {
+  .aches .migraine__video {
     padding: 0;
   }
 }
 
-.dores .enxaqueca__video .enxaqueca__title {
+.aches .migraine__video .migraine__title {
   color: white;
   font-size: 1.5em;
   font-weight: 500;
@@ -753,24 +753,24 @@ p {
 }
 
 @media only screen and (min-width: 1200px) {
-  .dores .enxaqueca__video .enxaqueca__title {
+  .aches .migraine__video .migraine__title {
     font-size: 2em;
     line-height: 48px;
   }
 }
 
-.dores .enxaqueca__video .enxaqueca__youtube {
+.aches .migraine__video .migraine__youtube {
   width: 300px;
   height: 300px;
 }
 
 @media only screen and (min-width: 1200px) {
-  .dores .enxaqueca__video .enxaqueca__youtube {
+  .aches .migraine__video .migraine__youtube {
     width: 450px;
   }
 }
 
-.dores .enxaqueca__medicine {
+.aches .migraine__medicine {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -787,22 +787,22 @@ p {
   padding-bottom: 3em;
 }
 
-.dores .enxaqueca__medicine .enxaqueca__medicineToy {
+.aches .migraine__medicine .migraine__medicineToy {
   width: 300px;
 }
 
 @media only screen and (min-width: 768px) {
-  .dores .enxaqueca__medicine .enxaqueca__medicineToy {
+  .aches .migraine__medicine .migraine__medicineToy {
     display: none;
   }
 }
 
-.dores .enxaqueca__medicine .enxaqueca__medicine {
+.aches .migraine__medicine .migraine__medicine {
   display: none;
 }
 
 @media only screen and (min-width: 768px) {
-  .dores .enxaqueca__medicine .enxaqueca__medicine {
+  .aches .migraine__medicine .migraine__medicine {
     display: initial;
     width: 300px;
     height: 131px;
@@ -811,20 +811,20 @@ p {
 }
 
 @media only screen and (min-width: 1200px) {
-  .dores .enxaqueca__medicine .enxaqueca__medicine {
+  .aches .migraine__medicine .migraine__medicine {
     width: 450px;
     height: 200px;
   }
 }
 
-.dores .enxaqueca__medicine .enxaqueca__link {
+.aches .migraine__medicine .migraine__link {
   color: white;
   font-size: 1.5em;
   text-transform: uppercase;
   font-weight: 600;
 }
 
-.dores .enxaqueca::before {
+.aches .migraine::before {
   content: '';
   position: absolute;
   left: 0;
@@ -839,7 +839,7 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-  .dores .enxaqueca::before {
+  .aches .migraine::before {
     background: radial-gradient(at 10% 70%, #10c6db 10%, #0093C0 50%);
     width: 130%;
     height: 130%;
@@ -851,7 +851,7 @@ p {
 }
 
 @media only screen and (min-width: 1200px) {
-  .dores .enxaqueca::before {
+  .aches .migraine::before {
     -webkit-transform: skewX(17deg);
             transform: skewX(17deg);
     width: 140%;
@@ -942,12 +942,12 @@ p {
   }
 }
 
-.footer .termos .termos__items:hover {
+.footer .terms .terms__items:hover {
   color: white;
   opacity: .8;
 }
 
-.footer .footer__line {
+.footer .footer__divider {
   width: 60%;
   max-width: 400px;
   height: 1px;
@@ -957,12 +957,12 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-  .footer .footer__line {
+  .footer .footer__divider {
     min-width: 90%;
   }
 }
 
-.footer .termos {
+.footer .terms {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -979,7 +979,7 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-  .footer .termos {
+  .footer .terms {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -987,18 +987,18 @@ p {
   }
 }
 
-.footer .termos__lists {
+.footer .terms__lists {
   list-style: none;
   padding-bottom: 1.5em;
 }
 
 @media only screen and (min-width: 768px) {
-  .footer .termos__lists {
+  .footer .terms__lists {
     padding: 0 1em;
   }
 }
 
-.footer .termos__items {
+.footer .terms__items {
   text-decoration: none;
   font-weight: 600;
   font-size: .9em;
@@ -1007,7 +1007,7 @@ p {
   text-transform: uppercase;
 }
 
-.footer .endereco {
+.footer .address {
   max-width: 80%;
   text-align: center;
   font-size: 1em;
@@ -1018,13 +1018,13 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-  .footer .endereco {
+  .footer .address {
     padding-top: 4em;
     padding-bottom: 3em;
   }
 }
 
-.footer .endereco__copyright {
+.footer .address__copyright {
   margin-top: 30px;
   font-weight: normal;
   font-size: .9em;

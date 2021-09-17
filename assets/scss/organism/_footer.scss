@@ -55,12 +55,12 @@
         }
     }
 }
-.footer .termos .termos__items:hover {
+.footer .terms .terms__items:hover {
     color: lighten(#F9F9F9, 20%);
     opacity: .8;
 }
 
-.footer .footer__line {
+.footer .footer__divider {
     width: 60%;
     max-width: 400px;
     height: 1px;
@@ -73,7 +73,7 @@
 }
 
 .footer {
-    .termos {
+    .terms {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -98,7 +98,7 @@
             text-transform: uppercase;
         }
     }
-    .endereco {
+    .address {
         max-width: 80%;
         text-align: center;
         font-size: 1em;

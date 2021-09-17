@@ -1,10 +1,10 @@
-.dores {
+.aches {
     overflow: hidden;
     img {
         max-width: 100%;
         object-fit: cover;
     }
-    .enxaqueca {
+    .migraine {
         width: 100%;
         position: relative;
         z-index: 1;
@@ -20,7 +20,7 @@
                 flex-direction: column;
                 justify-content: flex-end;
             }
-            .enxaqueca__image {
+            .migraine__image {
                 width: 9em;
                 margin-left: 15px;
                 @include tablet { 
@@ -33,7 +33,7 @@
                     margin-right: 30px;
                 }
             }
-            .enxaqueca__text {
+            .migraine__text {
                 width: 10em;
                 color: white;
                 background: #FF0000;
@@ -67,7 +67,7 @@
             @include desktop {
                 padding: 0;
             }
-            .enxaqueca__title {
+            .migraine__title {
                 color: white;
                 font-size: 1.5em;
                 font-weight: 500;
@@ -80,7 +80,7 @@
                     line-height: 48px;
                 }
             }
-            .enxaqueca__youtube {
+            .migraine__youtube {
                 width: 300px;
                 height: 300px;
                 @include desktop {
@@ -94,13 +94,13 @@
             justify-content: center;
             align-items: center;
             padding-bottom: 3em;
-            .enxaqueca__medicineToy {
+            .migraine__medicineToy {
                 width: 300px;
                 @include tablet {
                     display: none;
                 }
             }
-            .enxaqueca__medicine {
+            .migraine__medicine {
                 display: none;
                 @include tablet {
                     display: initial;
@@ -113,7 +113,7 @@
                     height: 200px;
                 }
             }
-            .enxaqueca__link {
+            .migraine__link {
                 color: white;
                 font-size: 1.5em;
                 text-transform: uppercase;
@@ -122,7 +122,7 @@
         }
     }
 }
-.dores .enxaqueca::before{
+.aches .migraine::before{
     content: '';
     position: absolute;
     left: 0;
