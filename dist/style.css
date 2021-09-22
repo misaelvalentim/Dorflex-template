@@ -334,14 +334,14 @@ p {
   border-bottom: none;
 }
 
-.referencias {
+.references {
   width: 100%;
   height: 100%;
   background: #F9F9F9;
   padding: 40px 0 40px 0px;
 }
 
-.referencias__paragrafo {
+.references__paragraph {
   width: calc(100% - 40px);
   margin: 0 auto;
   font-size: 1em;
@@ -351,7 +351,7 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-  .referencias__paragrafo {
+  .references__paragraph {
     width: calc(100% - 40px);
     max-width: 1200px;
     margin: 0 auto;
