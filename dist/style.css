@@ -870,7 +870,7 @@ p {
   height: 100%;
 }
 
-.footer__nav .menu {
+.footer__nav .footer__menu {
   width: 100%;
   height: 100%;
   padding-top: 2em;
@@ -892,7 +892,7 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-  .footer__nav .menu {
+  .footer__nav .footer__menu {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -901,7 +901,7 @@ p {
   }
 }
 
-.footer__nav .menu__lists {
+.footer__nav .footer__menu .menu__lists {
   text-align: center;
   width: 100%;
   list-style: none;
@@ -909,14 +909,14 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-  .footer__nav .menu__lists {
+  .footer__nav .footer__menu .menu__lists {
     padding: 0 .9em;
     margin-top: 1em;
     width: initial;
   }
 }
 
-.footer__nav .menu__items {
+.footer__nav .footer__menu .menu__items {
   font-size: 1em;
   text-decoration: none;
   color: #70bde7;
@@ -924,20 +924,20 @@ p {
   font-weight: 600;
 }
 
-.footer .footer__nav .menu .menu__lists:hover {
+.footer .footer__nav .footer__menu .menu__lists:hover {
   background: #0d354b;
   cursor: pointer;
 }
 
 @media only screen and (min-width: 768px) {
-  .footer .footer__nav .menu .menu__lists:hover {
+  .footer .footer__nav .footer__menu .menu__lists:hover {
     background: none;
     cursor: auto;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .footer .footer__nav .menu .menu__items:hover {
+  .footer .footer__nav .footer__menu .menu__items:hover {
     color: #1b73a3;
   }
 }
