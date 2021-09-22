@@ -34,19 +34,19 @@
                 width: 10em;
             }
         }
-        .menu {
+        .header__menu{
             display: none;
             @include tablet {
                 display: flex;
                 align-self: flex-end;
             }
-            &__list {
+            .menu__list {
                 list-style: none;
                 :hover {
                     color: #00254A;
                 }
             }
-            &__items {
+            .menu__items {
                 padding: 0 .8em;
                 text-decoration: none;
                 text-transform: uppercase;
@@ -61,7 +61,7 @@
                 }
             }
         }
-        .hamburger {
+        .header__menuMobile {
             display: flex;
             align-self: center;
 
