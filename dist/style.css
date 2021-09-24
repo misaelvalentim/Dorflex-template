@@ -359,6 +359,7 @@ p {
 }
 
 .aches {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -372,12 +373,11 @@ p {
   text-align: center;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#BEE5F5), to(#61C5EE));
   background-image: linear-gradient(top, #BEE5F5, #61C5EE);
+  overflow: hidden;
 }
 
 @media only screen and (min-width: 768px) {
   .aches {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#BEE5F5), to(#61C5EE));
-    background-image: linear-gradient(top, #BEE5F5, #61C5EE);
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -391,18 +391,19 @@ p {
      object-fit: cover;
 }
 
-.aches .muscle {
+.aches__muscle, .aches__migraine {
   width: 100%;
   position: relative;
+  z-index: 1;
 }
 
 @media only screen and (min-width: 768px) {
-  .aches .muscle {
+  .aches__muscle, .aches__migraine {
     width: 50%;
   }
 }
 
-.aches .muscle__icon {
+.aches__muscle .muscle__icon, .aches__muscle .migraine__icon, .aches__migraine .muscle__icon, .aches__migraine .migraine__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -413,7 +414,7 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-  .aches .muscle__icon {
+  .aches__muscle .muscle__icon, .aches__muscle .migraine__icon, .aches__migraine .muscle__icon, .aches__migraine .migraine__icon {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -425,28 +426,29 @@ p {
   }
 }
 
-.aches .muscle__icon .muscle__image {
+.aches__muscle .muscle__icon--left, .aches__muscle .muscle__icon--right, .aches__muscle .migraine__icon--left, .aches__muscle .migraine__icon--right, .aches__migraine .muscle__icon--left, .aches__migraine .muscle__icon--right, .aches__migraine .migraine__icon--left, .aches__migraine .migraine__icon--right {
   width: 9em;
   margin-left: 15px;
 }
 
 @media only screen and (min-width: 768px) {
-  .aches .muscle__icon .muscle__image {
+  .aches__muscle .muscle__icon--left, .aches__muscle .muscle__icon--right, .aches__muscle .migraine__icon--left, .aches__muscle .migraine__icon--right, .aches__migraine .muscle__icon--left, .aches__migraine .muscle__icon--right, .aches__migraine .migraine__icon--left, .aches__migraine .migraine__icon--right {
     margin-left: 55px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .aches .muscle__icon .muscle__image {
+  .aches__muscle .muscle__icon--left, .aches__muscle .muscle__icon--right, .aches__muscle .migraine__icon--left, .aches__muscle .migraine__icon--right, .aches__migraine .muscle__icon--left, .aches__migraine .muscle__icon--right, .aches__migraine .migraine__icon--left, .aches__migraine .migraine__icon--right {
     width: 12em;
+    margin-left: 35px;
   }
 }
 
-.aches .muscle__icon .muscle__text {
+.aches__muscle .muscle__icon .muscle__text, .aches__muscle .migraine__icon .muscle__text, .aches__migraine .muscle__icon .muscle__text, .aches__migraine .migraine__icon .muscle__text {
   width: 13em;
   color: white;
   background: #000000;
-  font-size: .6em;
+  font-size: .7em;
   padding: 1em 1em 1em .3em;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -456,7 +458,7 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-  .aches .muscle__icon .muscle__text {
+  .aches__muscle .muscle__icon .muscle__text, .aches__muscle .migraine__icon .muscle__text, .aches__migraine .muscle__icon .muscle__text, .aches__migraine .migraine__icon .muscle__text {
     font-size: 1em;
     -ms-flex-item-align: start;
         align-self: flex-start;
@@ -471,12 +473,15 @@ p {
 }
 
 @media only screen and (min-width: 1200px) {
-  .aches .muscle__icon .muscle__text {
+  .aches__muscle .muscle__icon .muscle__text, .aches__muscle .migraine__icon .muscle__text, .aches__migraine .muscle__icon .muscle__text, .aches__migraine .migraine__icon .muscle__text {
     padding: 1em 1.8em 1em 0em;
   }
 }
 
-.aches .muscle__video {
+.aches .video--left, .aches .video--right {
+  min-width: 300px;
+  width: 100%;
+  max-width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -491,18 +496,23 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 1.5em 0;
-  margin: 0 15px;
   position: relative;
+  z-index: 1;
 }
 
 @media only screen and (min-width: 768px) {
-  .aches .muscle__video {
-    margin-left: 20px;
+  .aches .video--left, .aches .video--right {
+    padding: 2em 0 0 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .aches .video--left, .aches .video--right {
     padding: 1em 0 0 0;
   }
 }
 
-.aches .muscle__video .muscle__title {
+.aches .video--left .video__title, .aches .video--right .video__title {
   color: white;
   font-size: 1.5em;
   font-weight: 500;
@@ -512,31 +522,50 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-  .aches .muscle__video .muscle__title {
+  .aches .video--left .video__title, .aches .video--right .video__title {
     padding-bottom: .5em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .aches .muscle__video .muscle__title {
+  .aches .video--left .video__title, .aches .video--right .video__title {
     font-size: 2em;
     line-height: 48px;
   }
 }
 
-.aches .muscle__video .muscle__youtube {
-  width: 300px;
-  height: 300px;
+.aches .video--left .aches__video--left, .aches .video--left .aches__video--right, .aches .video--right .aches__video--left, .aches .video--right .aches__video--right {
+  width: 95%;
+  height: 350px;
+  z-index: 1;
 }
 
-@media only screen and (min-width: 1200px) {
-  .aches .muscle__video .muscle__youtube {
-    width: 450px;
+@media only screen and (min-width: 768px) {
+  .aches .video--left .aches__video--left, .aches .video--left .aches__video--right, .aches .video--right .aches__video--left, .aches .video--right .aches__video--right {
+    width: 90%;
   }
 }
 
-.aches .muscle__medicine {
-  z-index: 0;
+@media only screen and (min-width: 1200px) {
+  .aches .video--left .aches__video--left, .aches .video--left .aches__video--right, .aches .video--right .aches__video--left, .aches .video--right .aches__video--right {
+    width: 85%;
+    max-width: 650px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .aches .video--left {
+    padding-top: 3.5em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .aches .video--left {
+    padding-top: 2.5em;
+  }
+}
+
+.aches__medicine {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -554,41 +583,45 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-  .aches .muscle__medicine {
-    padding: .5em 0 3em 0;
+  .aches__medicine {
+    padding: 0 0 3em 0;
   }
 }
 
-.aches .muscle__medicine .muscle__medicineToy {
-  width: 300px;
-}
-
-@media only screen and (min-width: 768px) {
-  .aches .muscle__medicine .muscle__medicineToy {
-    display: none;
-  }
-}
-
-.aches .muscle__medicine .muscle__medicine {
+.aches__medicine--left, .aches__medicine--right {
   display: none;
 }
 
 @media only screen and (min-width: 768px) {
-  .aches .muscle__medicine .muscle__medicine {
+  .aches__medicine--left, .aches__medicine--right {
     display: initial;
-    width: 300px;
-    padding: 0 0 2em 0;
+    min-width: 250px;
+    width: 400px;
+    max-height: 150px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .aches .muscle__medicine .muscle__medicine {
-    padding: 0 0 1.3em 0;
-    width: 450px;
+  .aches__medicine--left, .aches__medicine--right {
+    min-width: 300px;
+    width: 500px;
+    max-height: 200px;
   }
 }
 
-.aches .muscle__medicine .muscle__link {
+.aches__medicine .aches__medicineToy--left, .aches__medicine .aches__medicineToy--right {
+  min-width: 300px;
+  width: 80%;
+  max-width: 400px;
+}
+
+@media only screen and (min-width: 768px) {
+  .aches__medicine .aches__medicineToy--left, .aches__medicine .aches__medicineToy--right {
+    display: none;
+  }
+}
+
+.aches__medicine .aches__link {
   color: white;
   font-size: 1.5em;
   text-transform: uppercase;
@@ -619,58 +652,20 @@ p {
         }
     }
 */
-.aches {
-  overflow: hidden;
-}
-
-.aches img {
-  max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.aches .migraine {
-  width: 100%;
-  position: relative;
-  z-index: 1;
+.aches .aches__migraine {
+  z-index: 0;
 }
 
 @media only screen and (min-width: 768px) {
-  .aches .migraine {
-    width: 50%;
-  }
-}
-
-.aches .migraine__icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 1.5em 0;
-}
-
-@media only screen and (min-width: 768px) {
-  .aches .migraine__icon {
-    padding: 1.5em 0 0 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .aches .aches__migraine .migraine__icon {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
 }
 
-.aches .migraine__icon .migraine__image {
-  width: 9em;
-  margin-left: 15px;
-}
-
 @media only screen and (min-width: 768px) {
-  .aches .migraine__icon .migraine__image {
+  .aches .aches__migraine .migraine__icon--right {
     -ms-flex-item-align: end;
         align-self: flex-end;
     margin-left: initial;
@@ -679,18 +674,18 @@ p {
 }
 
 @media only screen and (min-width: 1200px) {
-  .aches .migraine__icon .migraine__image {
-    width: 10em;
-    margin-right: 30px;
+  .aches .aches__migraine .migraine__icon--right {
+    max-width: 11em;
+    margin-right: 1em;
   }
 }
 
-.aches .migraine__icon .migraine__text {
+.aches .aches__migraine .migraine__icon .migraine__text {
   width: 10em;
   color: white;
   background: #FF0000;
-  font-size: .6em;
-  padding: 1em 1em 1em 2em;
+  font-size: .8em;
+  padding: 1em 0em 1em 2em;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   -ms-flex-item-align: center;
@@ -701,8 +696,7 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-  .aches .migraine__icon .migraine__text {
-    width: 10em;
+  .aches .aches__migraine .migraine__icon .migraine__text {
     font-size: 1em;
     -ms-flex-item-align: end;
         align-self: flex-end;
@@ -713,118 +707,12 @@ p {
 }
 
 @media only screen and (min-width: 1200px) {
-  .aches .migraine__icon .migraine__text {
+  .aches .aches__migraine .migraine__icon .migraine__text {
     padding: 1em 2em 1em 0em;
   }
 }
 
-.aches .migraine__video {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: .5em 0;
-  margin: 0 15px;
-}
-
-@media only screen and (min-width: 1200px) {
-  .aches .migraine__video {
-    padding: 0;
-  }
-}
-
-.aches .migraine__video .migraine__title {
-  color: white;
-  font-size: 1.5em;
-  font-weight: 500;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-  padding: 0;
-  padding-bottom: .5em;
-  line-height: 36px;
-}
-
-@media only screen and (min-width: 1200px) {
-  .aches .migraine__video .migraine__title {
-    font-size: 2em;
-    line-height: 48px;
-  }
-}
-
-.aches .migraine__video .migraine__youtube {
-  width: 300px;
-  height: 300px;
-}
-
-@media only screen and (min-width: 1200px) {
-  .aches .migraine__video .migraine__youtube {
-    width: 450px;
-  }
-}
-
-.aches .migraine__medicine {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: 3em;
-}
-
-.aches .migraine__medicine .migraine__medicineToy {
-  width: 300px;
-}
-
-@media only screen and (min-width: 768px) {
-  .aches .migraine__medicine .migraine__medicineToy {
-    display: none;
-  }
-}
-
-.aches .migraine__medicine .migraine__medicine {
-  display: none;
-}
-
-@media only screen and (min-width: 768px) {
-  .aches .migraine__medicine .migraine__medicine {
-    display: initial;
-    width: 300px;
-    height: 131px;
-    padding: 0;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .aches .migraine__medicine .migraine__medicine {
-    width: 450px;
-    height: 200px;
-  }
-}
-
-.aches .migraine__medicine .migraine__link {
-  color: white;
-  font-size: 1.5em;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-.aches .migraine::before {
+.aches .aches__migraine::before {
   content: '';
   position: absolute;
   left: 0;
@@ -833,16 +721,16 @@ p {
   top: -5em;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#0093C0), color-stop(60%, #0090BD), to(#00254A));
   background-image: linear-gradient(to bottom, #0093C0, #0090BD 60%, #00254A);
-  z-index: -1;
   -webkit-transform: skewY(-12deg);
           transform: skewY(-12deg);
+  z-index: -2;
 }
 
 @media only screen and (min-width: 768px) {
-  .aches .migraine::before {
+  .aches .aches__migraine::before {
     background: radial-gradient(at 10% 70%, #10c6db 10%, #0093C0 50%);
-    width: 130%;
-    height: 130%;
+    width: 140%;
+    height: 140%;
     -webkit-transform: skewY(0);
             transform: skewY(0);
     -webkit-transform: skewX(8deg);
@@ -851,11 +739,9 @@ p {
 }
 
 @media only screen and (min-width: 1200px) {
-  .aches .migraine::before {
-    -webkit-transform: skewX(17deg);
-            transform: skewX(17deg);
-    width: 140%;
-    height: 120%;
+  .aches .aches__migraine::before {
+    -webkit-transform: skewX(15deg);
+            transform: skewX(15deg);
   }
 }
 

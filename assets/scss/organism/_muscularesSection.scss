@@ -1,24 +1,26 @@
 .aches {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     background-image: linear-gradient(top, #BEE5F5, #61C5EE);
+    overflow: hidden;
     @include tablet {
-        background-image: linear-gradient(top, #BEE5F5, #61C5EE);
         flex-direction: row;
     }
     img {
         max-width: 100%;
         object-fit: cover;
     }
-    .muscle {
+    &__muscle, &__migraine {
         width: 100%;
         position: relative;
+        z-index: 1;
         @include tablet {
             width: 50%;
         }
-        &__icon {
+        .muscle__icon, .migraine__icon {
             display: flex;
             justify-content: space-between;
             padding: 1.5em 0;
@@ -27,7 +29,7 @@
                 flex-direction: column;
                 padding: 1.5em 0 0 0;
             }
-            .muscle__image {
+            &--left, &--right {
                 width: 9em;
                 margin-left: 15px;
                 @include tablet {
@@ -35,13 +37,14 @@
                 }
                 @include desktop {
                     width: 12em;
+                    margin-left: 35px;
                 }
             }
             .muscle__text {
                 width: 13em;
                 color: white;
                 background: #000000;
-                font-size: .6em;
+                font-size: .7em;
                 padding: 1em 1em 1em .3em;
                 border-top-left-radius: 20px;
                 border-bottom-left-radius: 20px;
@@ -63,76 +66,102 @@
                 }
             }
         }
-        &__video {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            padding: 1.5em 0;
-            margin: 0 15px;
-            position: relative;
+    }
+}
+//Video and title setupt
+.aches {
+    .video--left, .video--right {
+        min-width: 300px;
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 1.5em 0;
+        position: relative;
+        z-index: 1;
+        @include tablet {
+            padding: 2em 0 0 0;
+        }
+        @include desktop {
+            padding: 1em 0 0 0;
+        }
+        .video__title {
+            color: white;
+            font-size: 1.5em;
+            font-weight: 500;
+            text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+            padding-bottom: 1em;
+            line-height: 36px;
             @include tablet {
-                margin-left: 20px;
-                padding: 1em 0 0 0;
+                padding-bottom: .5em;
             }
-            .muscle__title {
-                color: white;
-                font-size: 1.5em;
-                font-weight: 500;
-                text-shadow: 2px 2px 2px rgba(0,0,0,.5);
-                padding-bottom: 1em;
-                line-height: 36px;
-                @include tablet {
-                    padding-bottom: .5em;
-                }
-                @include desktop {
-                    font-size: 2em;
-                    line-height: 48px;
-                }
-            }
-            .muscle__youtube {
-                width: 300px;
-                height: 300px;
-                @include desktop {
-                    width: 450px;
-
-                }
+            @include desktop {
+                font-size: 2em;
+                line-height: 48px;
             }
         }
-        &__medicine {
-            z-index: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding-bottom: 6em;
+        .aches__video--left, .aches__video--right{
+            width: 95%;
+            height: 350px;
+            z-index: 1;
             @include tablet {
-                padding: .5em 0 3em 0;
+                width: 90%;
             }
-            .muscle__medicineToy {
-                width: 300px;
-                @include tablet {
-                    display: none;
-                }
+            @include desktop {
+                width: 85%;
+                max-width: 650px;
             }
-            .muscle__medicine {
+        }
+    }
+    .video--left {
+        @include tablet {
+            padding-top: 3.5em;
+        }
+        @include desktop {
+            padding-top: 2.5em;
+        }
+    }
+}
+.aches {
+    //Medicine setup
+    &__medicine {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 6em;
+        @include tablet {
+            padding: 0 0 3em 0;
+        }
+        &--left, &--right{
+            display: none;
+            @include tablet {
+                display: initial;
+                min-width: 250px;
+                width: 400px;
+                max-height: 150px;
+            }
+            @include desktop {
+                min-width: 300px;
+                width: 500px;
+                max-height: 200px;
+            }
+        }
+        .aches__medicineToy--left, .aches__medicineToy--right {
+            min-width: 300px;
+            width: 80%;
+            max-width: 400px;
+            @include tablet {
                 display: none;
-                @include tablet {
-                    display: initial;
-                    width: 300px;
-                    padding: 0 0 2em 0;
-                }
-                @include desktop {
-                    padding: 0 0 1.3em 0;
-                    width: 450px;
-                }
             }
-            .muscle__link {
-                color: white;
-                font-size: 1.5em;
-                text-transform: uppercase;
-                font-weight: 600;
-            }
+        }
+        .aches__link {
+            color: white;
+            font-size: 1.5em;
+            text-transform: uppercase;
+            font-weight: 600;
         }
     }
 }
