@@ -537,18 +537,17 @@ p {
 .aches .video--left .aches__video--left, .aches .video--left .aches__video--right, .aches .video--right .aches__video--left, .aches .video--right .aches__video--right {
   width: 95%;
   height: 350px;
-  z-index: 1;
 }
 
 @media only screen and (min-width: 768px) {
   .aches .video--left .aches__video--left, .aches .video--left .aches__video--right, .aches .video--right .aches__video--left, .aches .video--right .aches__video--right {
     width: 90%;
+    max-width: 450px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .aches .video--left .aches__video--left, .aches .video--left .aches__video--right, .aches .video--right .aches__video--left, .aches .video--right .aches__video--right {
-    width: 85%;
     max-width: 650px;
   }
 }
@@ -628,30 +627,6 @@ p {
   font-weight: 600;
 }
 
-/*
-    .musculares__video div, .enxaqueca__video div {
-        position: relative;
-    }
-    .musculares__video div::before, .enxaqueca__video div::before {
-        content: 'ASSISTA AGORA';
-        position: absolute;
-        width: 150px;
-        display: flex;
-        top: 41.5%;
-        left: 20%;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
-        color: #00254A;
-        background: #f9f9f9fa;
-        padding: 1em 0 1em 1.5em;
-        cursor: pointer;
-        @include desktop {
-            left: 35%;
-        }
-    }
-*/
 .aches .aches__migraine {
   z-index: 0;
 }
@@ -747,7 +722,6 @@ p {
 
 .footer {
   width: 100%;
-  height: 100%;
   background: #131e32;
 }
 
@@ -828,11 +802,6 @@ p {
   }
 }
 
-.footer .terms .terms__items:hover {
-  color: white;
-  opacity: .8;
-}
-
 .footer .footer__divider {
   width: 60%;
   max-width: 400px;
@@ -848,7 +817,7 @@ p {
   }
 }
 
-.footer .terms {
+.footer__terms {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -865,7 +834,7 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-  .footer .terms {
+  .footer__terms {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -873,18 +842,18 @@ p {
   }
 }
 
-.footer .terms__lists {
+.footer__terms .terms__lists {
   list-style: none;
   padding-bottom: 1.5em;
 }
 
 @media only screen and (min-width: 768px) {
-  .footer .terms__lists {
+  .footer__terms .terms__lists {
     padding: 0 1em;
   }
 }
 
-.footer .terms__items {
+.footer__terms .terms__items {
   text-decoration: none;
   font-weight: 600;
   font-size: .9em;
@@ -893,7 +862,7 @@ p {
   text-transform: uppercase;
 }
 
-.footer .address {
+.footer__address {
   max-width: 80%;
   text-align: center;
   font-size: 1em;
@@ -904,14 +873,19 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-  .footer .address {
+  .footer__address {
     padding-top: 4em;
     padding-bottom: 3em;
   }
 }
 
-.footer .address__copyright {
+.footer__address .footer__copyright {
   margin-top: 30px;
   font-weight: normal;
   font-size: .9em;
+}
+
+.footer .footer__terms .terms__items:hover {
+  color: white;
+  opacity: .8;
 }
