@@ -42,7 +42,7 @@
 .footer .footer__nav .footer__menu {
     .menu__lists:hover {
         background: darken(#70bde7, 50%);
-        transition:background .5s ease-out;
+        transition:all .5s ease-out;
         cursor: pointer;
         @include tablet {
             background: none;
@@ -52,7 +52,7 @@
     .menu__items:hover {
         @include tablet {
             color: darken(#70bde7, 30%);
-            transition:background .5s ease-out;
+            transition:all .5s ease-out;
         }
     }
 }

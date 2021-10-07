@@ -44,6 +44,7 @@
                 list-style: none;
                 :hover {
                     color: #00254A;
+                    transition: all .5s ease-out;
                 }
             }
             .menu__items {

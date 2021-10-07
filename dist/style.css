@@ -151,6 +151,8 @@ p {
 
 .header__nav .header__menu .menu__list :hover {
   color: #00254A;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
 }
 
 .header__nav .header__menu .menu__items {
@@ -828,8 +830,8 @@ p {
 
 .footer .footer__nav .footer__menu .menu__lists:hover {
   background: #0d354b;
-  -webkit-transition: background .5s ease-out;
-  transition: background .5s ease-out;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
   cursor: pointer;
 }
 
@@ -843,8 +845,8 @@ p {
 @media only screen and (min-width: 768px) {
   .footer .footer__nav .footer__menu .menu__items:hover {
     color: #1b73a3;
-    -webkit-transition: background .5s ease-out;
-    transition: background .5s ease-out;
+    -webkit-transition: all .5s ease-out;
+    transition: all .5s ease-out;
   }
 }
 
