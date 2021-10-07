@@ -42,6 +42,7 @@
 .footer .footer__nav .footer__menu {
     .menu__lists:hover {
         background: darken(#70bde7, 50%);
+        transition:all .5s ease-out;
         cursor: pointer;
         @include tablet {
             background: none;
@@ -51,6 +52,7 @@
     .menu__items:hover {
         @include tablet {
             color: darken(#70bde7, 30%);
+            transition:all .5s ease-out;
         }
     }
 }
@@ -114,4 +116,5 @@
 .footer .footer__terms .terms__items:hover {
     color: lighten(#F9F9F9, 20%);
     opacity: .8;
+    transition: all .5s ease-out;
 }
