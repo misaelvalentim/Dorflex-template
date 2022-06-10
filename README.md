@@ -2,7 +2,7 @@
 
 For this project, it's apllied the followings methodologies/technologies:
 
-  - HTML, SCSS, JavaScript, Nuxt, Vue, Atomic Design, BEM, Mobile First.
+  - HTML, SCSS, Atomic Design, BEM, Mobile First.
 
 ### You will see the link for the expected website template, as well as its deploy
 
